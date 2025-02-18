@@ -1,9 +1,9 @@
-# 佳明数据同步高驰平台脚本（支持国际区与国区）
+# 佳明数据同步高驰平台脚本（支持国际区与国区）目前高驰上传活动接口已修复，重新fork sync代码后删除db/garmin.db文件重跑一遍！！！
 ## 致谢
 - 本脚本佳明模块代码来自@[yihong0618](https://github.com/yihong0618) 的 [running_page](https://github.com/yihong0618/running_page) 个人跑步主页项目,在此非常感谢@[yihong0618](https://github.com/yihong0618)大佬的无私奉献！！！
 
 ## 注意
-由于高驰平台只允许单设备登录，同步期间如果打开网页会影响到数据同步导致同步失败，同步期间切忌不要打开网页。
+由于高驰平台只允许单设备登录，同步期间如果打开网页会影响到数据同步导致同步失败，同步期间切记不要打开网页。
 
 ## 参数配置
 |       参数名       |                备注                |    案例     |
@@ -11,6 +11,7 @@
 |    GARMIN_EMAIL    |          佳明登录帐号邮箱          |             |
 |  GARMIN_PASSWORD   |            佳明登录密码            |             |
 | GARMIN_AUTH_DOMAIN | 佳明区域（国际区填:COM 国区填:CN） | (COM or CN) |
+| GARMIN_NEWEST_NUM  | 最新记录条数                     | (默认0，可写大于0) |
 |    COROS_EMAIL     |           高驰 登录邮箱           |             |
 |   COROS_PASSWORD   |             高驰 密码             |             |
 
